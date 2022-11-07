@@ -1,0 +1,34 @@
+** PASOS PARA GIT HUB**
+
+1. Abres git hub y seleccionas en repositorio new, llenas los datos basicos
+seleccionas la cacilla del pdf y finalmente creas el repositorio github.
+
+2. En la carpeta del repositorio en el apartado code se selecciona
+SSH y copias el enlace.
+
+3. Abres el git bash y te diriges al entorno de la capeta del pryecto.
+
+4. revisamos el entorno web del proyecto con
+git remote -v
+
+5. Agregamos un entorno remoto de nuestro repositorio con
+git remote add origin main git@github.com:JuanCarlosMelendez/_proyecto2_git.git 
+(url copiada de github)
+
+6. Finalmente usamos el comando 
+traemos lo que tenemos en el git hub que es normalemte el pdf
+
+git pull origin main
+
+acto seguido permitimos que las historias unrealated se fusionen
+
+git pull origin main --allow-unrelated-histories (para salir del estado
+de mensaje aprietas Esc shift zzz hasta que salga)
+
+git push origin main
+
+PODEMOS USAR EL COMANDO git log --all --graph --decorate --oneline
+
+HAY QUE RESALTAR QUE VAMOS A PUSHEAR SOLO LAS RAMAS QUE TRABAJAMOS
+NO ES COMO QUE SE VA A PUSHEAR EL MAIN, PARA ESTE CASO DE PRACTICA
+YO SOLO CREO MI PROPIO MAIN Y LUEGO PUSHEO MAIN Y LAS DEMAS BRANSHES.
